@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/format.css">
+    <title>Disney Quiz</title>
+        <link rel="shortcut icon" href="PICTURES/logo.jpeg" alt="Icono de la Pestaña -Casa de UP-">
+    </head>
+    <body>
+      <section id="total">
+        <header>
+            <h1>Trivias de Disney</h1>
+            <!--FORMULARIO PARA DAR BIENVENIDA AL USUARIO-->
+                <div id= "hola">
+                  <p>Hola humano del otro lado del monitor</p>
+                </div>
+                <section id= "usuario">
+                  <input type="text" id="userName" maxlength="20" placeholder="Tu nombre va aquí ;D"><br>
+                  <!--<label for="userName"></label>-->
+                  <input type= "button" value="Ingresar Nombre" id= "enviaName" onclick="ingresaNombre()">
+                  <label for="enviaName">Envia tu nombre</label>
+                </section>
+
+                <section id="eleccion"><!--SECCION DE RADIO BUTTONS-->
+                  <h3>¿Estas list@ para jugar?</h3>
+                  <input type="button" value = "Si" id= "siJugar" onclick="siJuego()">
+                  <label for="siJugar">Vamos a Jugar</label>
+                  <input type="button" value = "No" id="noJugar" onclick="noJuego()">
+                  <label for="noJugar">Ahora no joven</label>
+                </section>
+        </header>
+            <form id="formularioMenu">
+                  <h3>Demuestra tu sabiduria en las siguientes categorias</h3>
+                  <input type="button" Value="Categoria 1" id="categoria1" onclick="triviaUno()">
+                  <label for="categoria1">El rey leon</label>
+
+                  <input type="button" value="Categoria 2" id="categoria2" onclick="triviaDos()">
+                  <label for="categoria2">La sirenita</label>
+            </form>
+        <section id="contenido">
+          <section id="primer-trivia">
+
+            <form id="primer-pregunta1">
+              <h4>¿Cuál de las sig creaturas no es una hiena de la peli?</h4>
+              <ul>
+                <li> 1. SHENZI</li>
+                <li> 2. BANZAI</li>
+                <li> 3. FONZI</li>
+                <li> 4. ED</li>
+              </ul>
+              <ul>
+                Elegir: <input id="respuesta11" type="number" min = "1" max="4" required autofocus= "autofocus">
+                <input type="button" id= "r11" onclick="triviaUnoPrimerPregunta()" value="Envaluar">
+                <label for="r11">Evaluar</label>
+              </ul>
+            </form>
+
+            <form id="segunda-pregunta1">
+              <h4>¿Qu'e tipo de animal en Rafiki?</h4>
+              <ul>
+                <li> 1. CHINPANCÉ</li>
+                <li> 2. ORANGUTÁN</li>
+                <li> 3. MANDRIL</li>
+                <li> 4. HIENA</li>
+              </ul>
+              <ul>
+                Elegir: <input id="respuesta12" type="number" min = "1" max="4" required autofocus= "autofocus">
+                <input type="button" id= "r12" onclick="triviaUnoSegundaPregunta()" value="Envaluar">
+                <label for="r12">Evaluar</label>
+              </ul>
+            </form>
+
+            <form id="tercer-pregunta1">
+              <h4>¿En qué idiona <em>Simba</em> significa <strong>león</strong>?</h4>
+              <ul>
+                <li> 1. PORTUGUÉS</li>
+                <li> 2. LATIN</li>
+                <li> 3. INGLÉS</li>
+                <li> 4. SUAJILI</li>
+              </ul>
+              <ul>
+                Elegir: <input id="respuesta13" type="number" min = "1" max="4" required autofocus= "autofocus">
+                <input type="button" id= "r13" onclick="triviaUnoTercerPregunta()" value="Envaluar">
+                <label for="r13">Evaluar</label>
+              </ul>
+            </form>
+
+            <form id="cuarta-pregunta1">
+              <h4>Completa la frase:<em>"Sin preocuparse ..."</em></h4>
+              <ul>
+                <li> 1. UNA FORMA DE SER</li>
+                <li> 2. ES COMO HAY DE VIVIR</li>
+                <li> 3. VISCOSOS PERO SABROSOS <em>("Yomi")</em></li>
+                <li> 4. HAKUNA MATATA</li>
+              </ul>
+              <ul>
+                Elegir: <input id="respuesta14" type="number" min = "1" max="4" required autofocus= "autofocus">
+                <input type="button" id= "r14" onclick="triviaUnoCuartaPregunta()" value="Envaluar">
+                <label for="r14">Evaluar</label>
+              </ul>
+            </form>
+          </section>
+
+          <section id="segunda-trivia">
+            <form id="primer-pregunta2">
+              <h4>¿Qué le prohibe tritón a Ariel?</h4>
+              <ul>
+                <li> 1. DEJAR SU CUARTO</li>
+                <li> 2. REUNIRSE CON URSULA</li>
+                <li> 3. SALIR A LA SUPERFICIE</li>
+                <li> 4. JUGAR CON TIBURONES</li>
+              </ul>
+              <ul>
+                Elegir: <input id="respuesta21" type="number" min = "1" max="4" required autofocus= "autofocus">
+                <input type="button" id= "r21" onclick="triviaDosPrimerPregunta()" value="Envaluar">
+                <label for="r21">Evaluar</label>
+              </ul>
+            </form>
+
+            <form id="segunda-pregunta2">
+              <h4>¿Cómo llama Ariel al tenedor?</h4>
+              <ul>
+                <li> 1. RIZADOR</li>
+                <li> 2. PIPA</li>
+                <li> 3. PEINE</li>
+                <li> 4. CACHIVACHE</li>
+              </ul>
+              <ul>
+                Elegir: <input id="respuesta22" type="number" min = "1" max="4" required autofocus= "autofocus">
+                <input type="button" id= "r22" onclick="triviaDosSegundaPregunta()" value="Envaluar">
+                <label for="r22">Evaluar</label>
+              </ul>
+            </form>
+
+            <form id="tercer-pregunta2">
+              <h4>Premio al que no se le nominó</h4>
+              <ul>
+                <li> 1. MEJOR ACTRIZ</li>
+                <li> 2. MEJOR CANCION POR <em>Under the sea</em></li>
+                <li> 3. MEJOR CANCION POR <em>Kiss the girl</em></li>
+                <li> 4. MEJOR BANDA SONORA</li>
+              </ul>
+              <ul>
+                Elegir: <input id="respuesta23" type="number" min = "1" max="4" required autofocus= "autofocus">
+                <input type="button" id= "r23" onclick="triviaDosTercerPregunta()" value="Envaluar">
+                <label for="r23">Evaluar</label>
+              </ul>
+            </form>
+
+            <form id="cuarta-pregunta2">
+              <h4>Sebastían es un :</h4>
+              <ul>
+                <li> 1. CANGREJO</li>
+                <li> 2. PEZ</li>
+                <li> 3. LANGOSTA</li>
+                <li> 4. RAYA DE MAR</li>
+              </ul>
+              <ul>
+                Elegir: <input id="respuesta24" type="number" min = "1" max="4" required autofocus= "autofocus">
+                <input type="button" id= "r24" onclick="triviaDosCuartaPregunta()" value="Envaluar">
+                <label for="r24">Evaluar</label>
+              </ul>
+            </form>
+          </section>
+          <section id= "results">
+              <h3>Taran... Veamos cómo te fue</h3>
+              <section id="respuestasCorrectas1"></section>
+              <section id="respuestasIncorrectas1"></section>
+              <section id="respuestasCorrectas2"></section>
+              <section id="respuestasIncorrectas2"></section>
+          </section>
+        </section>
+        <script type="text/javascript" src="JS/app.js"></script>
+    </body>
+</html>

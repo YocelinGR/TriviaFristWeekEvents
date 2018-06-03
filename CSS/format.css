@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #DEBF74;
+  font-family: "Roboto";
+  border-top: 10px solid #5FC194; }
+
+  #formularioMenu,
+  #results,
+  #eleccion,
+  #primer-pregunta1,
+  #segunda-pregunta1,
+  #tercer-pregunta1,
+  #cuarta-pregunta1,
+  #primer-pregunta2,
+  #segunda-pregunta2,
+  #tercer-pregunta2,
+  #cuarta-pregunta2 {
+    display: none;
+  }
+
+  h1 {
+    text-align: center;
+    color: #CA0E33;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: inline-block;
+  }
+  p {
+    text-align: center;
+    color: #FBEFF2;
+    ppadding-left: 30px;
+    padding-right: 30px;
+    display: inline-block;
+  }
+  input[type="button"]{
+    display: none;
+  }
+  label{
+    color: #077D49;
+    background: #C1DFD5;
+    padding: 5px 20px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  label:hover{
+    background: rgba(131,122,136,0.5);
+  }
